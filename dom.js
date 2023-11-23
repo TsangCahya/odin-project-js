@@ -37,4 +37,13 @@ content.textContent=  'This is the glorious text-content!';
 
 newContainer.appendChild(newDiv);
 
-const
+const newTitle= document.createElement('h1');
+newTitle.classList.add('new-title');
+newTitle.textContent="I'm in a div";
+newDiv.appendChild(newTitle);
+
+const newP= document.createElement('p');
+newP.classList.add('new-p');
+newP.textContent="ME TOO!";
+newDiv.appendChild(newP);
+
