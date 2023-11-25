@@ -8,6 +8,7 @@
 
 body{
     height: 100vh;
+    width: 100ww;
     display: flex;
     align-items: center;
     justify-content: center;
