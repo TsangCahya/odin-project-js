@@ -37,8 +37,8 @@
 
         button.addEventListener('click', (e) => {
             const myItem= input.value;
-            input.value=''; //test nanti
-
+            
+            if(input.value !=''){
             const listItem =document.createElement('li');
             const listText =document.createElement('span');
             const listBtn =document.createElement('button');
@@ -59,8 +59,13 @@
         listBtn.addEventListener('click',(e)=>{
             list.removeChild(listItem);
         });
-
-        input.focus();
+        input.value=''; //test nanti
+        ;}
+        else {
+            alert("enter new item!");
+        }
+        
+        input.focus()
         });
 
 
